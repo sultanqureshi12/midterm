@@ -8,9 +8,12 @@
 <?php endif;?>
 
 <?php get_template_part('includes/section','content');?>
+<div> <?php get_template_part('includes/section','resetapi');?></div>
 
 </div>
 </section>
+
+
 
 
 <?php get_footer();?>

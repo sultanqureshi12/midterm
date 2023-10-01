@@ -36,13 +36,13 @@
     jQuery(document).ready(function($){
         $('#enquiry').submit(function(e){
             e.preventDefault();
-
+              var nonce_value='<?php echo wp_create_nonce('ajax-nonce');?>';
             var formData =$('#enquiry').serialize();
                // formData.append('nonce','<?php echo wp_create_nonce('ajax-nonce');?>');
             $.ajax({
                 type:'POST',
                 url: '<?php echo admin_url('admin-ajax.php');?>',
-                data: formData + '&action=send_email',
+                data: formData + '&action=send_email&nonce='+nonce_value,
                 dataType:'json',
                 success: function(response){
                     $('#enquiry').fadeOut(200);

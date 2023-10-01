@@ -8,6 +8,7 @@
 	<img src="<?php the_post_thumbnail_url('full');?>" alt="<?php the_title();?>" class="img-fluid mb-3 mt-3">
 
 <?php endif;?>
+<?php get_template_part('includes/section','shortcodes');?>
 </div>
 </section>
 

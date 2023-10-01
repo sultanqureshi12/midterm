@@ -9,7 +9,11 @@
         <?php endif;?>
 
         <?php get_template_part('includes/section','content');?>
+
+
     </div>
+
 </section>
+<div> <?php get_template_part('includes/section','resetapi');?></div>
 
 <?php get_footer();?>

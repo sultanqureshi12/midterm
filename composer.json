@@ -1,0 +1,17 @@
+{
+    "name": "sulta/mytheme",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Sulta\\Mytheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sultan",
+            "email": "sultan.qureshi155@gmail.com"
+        }
+    ],
+    "require": {}
+}
